@@ -626,6 +626,7 @@ header .search-bar-container label:hover{
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
+  }
 
 }
 
@@ -645,5 +646,5 @@ header .search-bar-container label:hover{
   
   .footer-col{
     width: 100%;
-
+  }
 }
