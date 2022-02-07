@@ -487,53 +487,82 @@ header .search-bar-container label:hover{
   text-align: center;
 }
 
+/* footer section */
+.footer .container{
+	max-width: 1170px;
+	margin:auto;
+}
+.footer .row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer ul{
+	list-style: none;
+}
 .footer{
-  background:#333;
+	background-color: #24262b;
+    padding: 70px 0;
 }
-
-footer .company a{
-  text-decoration: none;
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
 }
-
-.footer .box-container{
-  display: flex;
-  flex-wrap: wrap;
-  gap:3rem;
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
 }
-
-.footer .box-container .box{
-  padding:1rem 0;
-  flex:1 1 25rem;
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
 }
-
-.footer .box-container .box h3{
-  font-size: 2.5rem;
-  padding:.7rem 0;
-  color:#fff;
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
 }
-
-.footer .box-container .box p{
-  font-size: 1.5rem;
-  padding:.7rem 0;
-  color:#eee;
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
 }
-
-.footer .box-container .box a{
-  display: block;
-  font-size: 1.5rem;
-  padding:.7rem 0;
-  color:#eee;
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
 }
-
-.footer .box-container .box a:hover{
-  color:var(--orange);
-  text-decoration: underline;
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
 }
 
 .footer .credit{
   text-align: center;
   padding:2rem 1rem;
-  margin-top: 1rem;
+  margin-top: 5rem;
   font-size: 2rem;
   font-weight: normal;
   color:#fff;
@@ -541,9 +570,8 @@ footer .company a{
 }
 
 .footer .credit span{
-  color:var(--orange);
+  color:#e91e63;
 }
-
 
 
 /* media queries  */
@@ -595,6 +623,10 @@ footer .company a{
     background:#222;
   }
 
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+
 }
 
 @media (max-width:450px){
@@ -610,5 +642,8 @@ footer .company a{
   .contact .row form .inputBox input{
     width:100%;
   }
+  
+  .footer-col{
+    width: 100%;
 
 }
